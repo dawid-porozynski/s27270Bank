@@ -14,7 +14,9 @@ public class RegisterService {
 
 
     public Transfer makeRegister() {
+        if(registerStorage == null){
 
+        }
 
 
     }

@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class RegisterStorage {
@@ -22,4 +23,7 @@ public class RegisterStorage {
         return registerList;
     }
 
+    public Optional<Register> getClientId(int clientId) {
+        return registerList.stream().filter(car -> registerList.get().equals(vin)).findFirst();
+    }
 }

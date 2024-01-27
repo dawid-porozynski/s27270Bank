@@ -16,5 +16,7 @@ public class TransferStorage {
 
     public void setTransfers(List<Transfer> transfers) {
         this.transfers = transfers;
+
+
     }
 }
