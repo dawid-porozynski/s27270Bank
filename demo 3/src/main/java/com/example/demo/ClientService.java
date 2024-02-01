@@ -59,7 +59,7 @@ public class ClientService {
         Optional<Client> customer = clientStorage.getCustomerByName(customerName);
 
         if (customerDoesNotExist(customerName)) {
-            System.out.println("No customer found");
+            System.out.println("No client found");
             transfer.setStatusType(StatusType.DECLINED);
             return transfer;
         }
